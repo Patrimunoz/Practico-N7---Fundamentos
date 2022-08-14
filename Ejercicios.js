@@ -4,6 +4,15 @@ function Proto() {
     // Pista, utilizar: __proto__
     // Tu código:
 }
+var person = {
+    nombre: "default",
+    apellido: "default",
+}
+    
+ var Alex = Object.create(person)
+ console.log(Alex)
+ console.log(Alex.__proto__)
+
 function agregarMetodoPrototype(Constructor) {
     // Agrega un método al Constructor del `prototype`
     // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
